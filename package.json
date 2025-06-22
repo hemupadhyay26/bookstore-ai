@@ -1,0 +1,38 @@
+{
+  "name": "bookstore-ai",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "db:generate": "npx drizzle-kit generate",
+    "db:migrate": "npx drizzle-kit migrate",
+    "worker": "tsx src/worker/worker.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.4",
+    "@langchain/aws": "^0.1.11",
+    "@langchain/community": "^0.3.46",
+    "@langchain/core": "^0.3.59",
+    "@langchain/openai": "^0.5.13",
+    "@qdrant/js-client-rest": "^1.14.1",
+    "@supabase/supabase-js": "^2.50.0",
+    "cookie": "^1.0.2",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.44.2",
+    "hono": "^4.7.11",
+    "jsonwebtoken": "^9.0.2",
+    "langchain": "^0.3.28",
+    "pdf-parse": "^1.1.1",
+    "pg": "^8.16.0",
+    "postgres": "^3.4.7",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^20.11.17",
+    "drizzle-kit": "^0.31.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
